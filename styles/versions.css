@@ -1,0 +1,91 @@
+*{
+
+margin: 0;
+padding: 0;
+
+}
+
+#versoes{
+
+    display: flex;
+    flex-direction: column; 
+   
+}
+
+#titulo-versions{
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+#subtitulo-versions{
+ 
+    font-family: "Roboto", sans-serif; 
+    font-weight: 500;
+    margin-left: 40%;
+    margin-top: 15px;
+
+
+}
+
+
+.container-abs-versions{
+
+  
+}
+
+
+.container-tw300abs, .container-tw300cbs{
+
+    display: flex;
+    font-family: "Roboto", sans-serif;  
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 5%;
+    margin-left: 55px;
+
+}
+
+#abs-red, #cbs-grey{
+
+    width: 716px;
+    border-style: solid;
+    border-color: brown;
+
+}
+
+.abs-specs, .cbs-specs{
+
+    flex: 1; 
+    max-width: 45%; 
+    padding: 20px;
+    border: 1px solid #B30000;
+    box-sizing: border-box;
+}
+
+#destaque{
+
+    position: absolute; 
+    font-family:"Roboto", sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    width: 80px;
+    height: 20px;
+    background-color:#B30000;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
