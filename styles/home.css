@@ -7,21 +7,21 @@
 }
 
 body{
-
+    
     overflow-x: hidden; 
     color: #1E1E1E;
     background-color: white;
-    
+
 }
 
 header{
 
- background-color: white;
- box-sizing: border-box;
- display: flex;
- align-items: center;
- justify-content: space-between;
- height: 75px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
 
  
 }
@@ -36,8 +36,8 @@ header{
 
 .logohonda{
 
-  width: 185px;
-  margin-left: 26%;
+    width: 185px;
+    margin-left: 26%;
 
 }
 
@@ -61,10 +61,10 @@ header{
 
 .nav-bar a{
 
-font-family:"Roboto", serif;
-font-size: 16px;
-color: #1E1E1E;
-text-decoration: none;
+    font-family:"Roboto", serif;
+    font-size: 16px;
+    color: #1E1E1E;
+    text-decoration: none;
 
 }
 
@@ -107,58 +107,96 @@ text-decoration: none;
 
 .btn-inter:hover{
 
-      background-color:#520101; 
-      color: #fff;
-      transform: scale(0.9);
+    background-color:#520101; 
+    color: #fff;
+    transform: scale(0.9);
 
 }
 
 .cb300-home{
     
-    margin-right: 25%;
+    position: relative;
     display: flex;
     align-items: center;
+}
+
+.cb300-home::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 1000px;
+    background: linear-gradient(#1E1E1E  ,#414141 );
+    filter: blur(120px); 
+    z-index: 0; 
+}
+
+.cb300-home img {
+
+    position: relative;
+    z-index: 1; 
 }
 
 #moto{
 
     width: 722px;
     height: 459px;
-    
-}
 
+}
 
 .container-btns{
 
-  display:flex;
-  box-sizing: border-box;
-  width: 100px;
-  height: 50px;
-  margin-top: 50%;
+    display:flex;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    margin-top: 50%;
 
 }
 
 .btn-abs{
-   
+
+    margin: 0;
     font-family: "Roboto", serif; 
     font-size: 14px;
     font-weight: 600px;
     background-color: #B30000;
-    color: #D9D9D9;
+    color: #ffffff;
     border-radius: 5px;
     border: none;
     width: 71px;
     height: 31px;
     cursor: pointer;
+    transition: all 0.3s ease; 
+
+}
+
+.btn-abs:hover{
+
+    background-color:#970404; 
+    color: #fff;
+    transform: scale(0.9);
+
+}
+
+
+.btn-cbs:hover{
+
+    background-color:#970404; 
+    color: #fff;
+    transform: scale(0.9);
 
 }
 
 .btn-cbs{
-
+    margin: 0;
     font-size: 14px;
     font-family: "Roboto", serif;
     font-weight:600; 
-    color: #B30000;
+    background-color: #ffffff;
+    color: #b30000;
     border: none;
     border-radius: 5px;
     border-style: solid;
@@ -166,12 +204,14 @@ text-decoration: none;
     width: 71px;
     height: 31px;
     cursor: pointer;
+    transition: all 0.3s ease; 
 
 }
 
 .container-forward{
 
     cursor:pointer;
+    transition: all 0.3s ease
 
 }
 

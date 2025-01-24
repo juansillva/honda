@@ -7,12 +7,12 @@ padding: 0;
 
 #versoes{
 
-    display: flex;
-    flex-direction: column; 
-   
+    margin-bottom: 50px;
+
 }
 
 #titulo-versions{
+
     margin-top: 15px;
     margin-left: 5px;
     text-align: center;
@@ -29,40 +29,103 @@ padding: 0;
 
 }
 
+.container-titulo-versions{
+
+    margin-left: 25px;
+
+
+}
 
 .container-abs-versions{
 
-  
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
 }
+
+
+.container-cbs-versions{
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
 
 
 .container-tw300abs, .container-tw300cbs{
 
     display: flex;
+    flex-direction: row;
     font-family: "Roboto", sans-serif;  
     font-size: 14px;
     font-weight: 100;
     margin-top: 5%;
-    margin-left: 55px;
+    margin-left: 60px;
+    position: relative; 
+    gap: 20px;
+    border-style: solid;
+    border-color: #B30000;
+
+    width: 550px 0 0 ;
 
 }
 
 #abs-red, #cbs-grey{
 
-    width: 716px;
-    border-style: solid;
-    border-color: brown;
+    width: 616px;
 
 }
 
 .abs-specs, .cbs-specs{
 
-    flex: 1; 
-    max-width: 45%; 
-    padding: 20px;
-    border: 1px solid #B30000;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:"Roboto", sans-serif;
+    width: 40%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
 }
+
+.abs-specs h4{
+
+    font-weight: 300;
+
+}
+
+
+.abs-specs h5{
+
+    font-weight: 300 ;
+    line-height: normal;
+    width: 322px;
+}
+
+.cbs-specs h4{
+
+    font-weight: 300;
+}
+
+.cbs-specs h5{
+
+
+    font-weight: 300 ;
+    line-height: normal;
+    width: 322px;
+
+
+
+}
+
+
+
+
 
 #destaque{
 
@@ -79,13 +142,33 @@ padding: 0;
 }
 
 
+footer {
 
+    width: 100%;
+     
+    background-color: #1E1E1E;
+    padding: 20px 0;
+    color: #D9D9D9;
+    position: relative;
+    z-index: 10;
+}
 
+footer .content-footer {
+    text-align: center;
+}
 
+footer h5 {
 
+    font-family: "Roboto", sans-serif; 
+    font-weight: 300;
+    color: #D9D9D9;
+    font-size: 12px;;
+    margin: 10px 0;
+}
 
-
-
-
-
+footer .icons img {
+    cursor: pointer;
+    width: 30px;
+    margin: 0 10px;
+}
 
