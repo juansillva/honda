@@ -12,6 +12,8 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: white;
   box-sizing: border-box;
   display: flex;
@@ -26,9 +28,9 @@ header {
   font-size: 36px;
 }
 
-.logohonda {
+#logo-honda {
   width: 185px;
-  margin-left: 26%;
+  transform: translateX(220px);
 }
 
 #menu {
@@ -45,8 +47,16 @@ header {
   gap: 25px;
 }
 
+.nav-bar ul li a:hover {
+  display: inline-block;
+  transform: scale(0.9);
+  color: #b30000;
+  transition: transform 0.2s, color 0.2s;
+}
+
 .nav-bar a {
   font-family: "Roboto", serif;
+  font-weight: 500;
   font-size: 16px;
   color: #1e1e1e;
   text-decoration: none;
@@ -64,7 +74,7 @@ header {
 }
 
 .content-home {
-  width: 25%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -81,49 +91,63 @@ header {
   height: 44.01px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
 
-.btn-inter:hover {
-  background-color: #520101;
-  color: #fff;
-  transform: scale(0.9);
+  &:hover {
+    background-color: #520101;
+    color: #fff;
+    transform: scale(0.9);
+  }
 }
 
 .cb300-home {
   position: relative;
   display: flex;
   align-items: center;
-}
-
-.cb300-home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 250px;
-  border-radius: 1000px;
-  background: linear-gradient(#1e1e1e, #414141);
-  filter: blur(120px);
-  z-index: 0;
-}
-
-.cb300-home img {
-  position: relative;
-  z-index: 1;
-}
-
-#moto {
+  justify-content: center;
   width: 722px;
-  height: 459px;
+  height: 459px; 
+  
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform:translateX(100vw);
+    transition: 0.5s;
+    opacity: 0;
+
+
+ 
+  }
+
+  & .active{
+
+    transform: translateX(0);
+    transition: 0.5s;
+    opacity: 1 ;
+
 }
+
+
+
+
+
+
+
+}
+
+
 
 .container-btns {
   display: flex;
   box-sizing: border-box;
   width: 100px;
   height: 50px;
-  margin-top: 50%;
+
+  transform: translateY(180px);
 }
 
 .btn-abs {
@@ -139,18 +163,12 @@ header {
   height: 31px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
 
-.btn-abs:hover {
-  background-color: #970404;
-  color: #fff;
-  transform: scale(0.9);
-}
-
-.btn-cbs:hover {
-  background-color: #970404;
-  color: #fff;
-  transform: scale(0.9);
+  &:hover {
+    background-color: #970404;
+    color: #fff;
+    transform: scale(0.9);
+  }
 }
 
 .btn-cbs {
@@ -168,14 +186,25 @@ header {
   height: 31px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #970404;
+    color: #fff;
+    transform: scale(0.9);
+  }
 }
 
-.container-forward {
+#forward {
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(0.9);
+  }
 }
 
 hr {
   border-color: #b30000;
   margin-top: 15px;
 }
+

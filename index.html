@@ -6,7 +6,6 @@
     <title>Honda CB 300F Twister 2025 - Naked|Honda Motos</title>
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/versions.css" />
-    <link rel="stylesheet" href="styles/characteristics.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,7 +16,7 @@
   <body>
     <header>
       <img id="menu" src="assets/header/menu.png" alt="menu" />
-      <img class="logohonda" src="assets/header/logo.svg" alt="logohonda" />
+      <img id="logo-honda" src="assets/header/logo.svg" alt="logohonda" />
       <nav class="nav-bar">
         <ul>
           <li><a href="#inicio">Início</a></li>
@@ -35,18 +34,26 @@
             Acelere seus limites com a nova
             <strong class="strong-home">CB 300F Twister!</strong>
           </h1>
-          <button class="btn-inter">Tenho Interesse</button>
+          <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister"
+            ><button class="btn-inter">Tenho Interesse</button></a>
         </div>
         <div class="cb300-home">
-          <img id="moto" src="assets/main/twredhome.webp" alt="cb300twister" />
-          <div class="container-forward">
-            <img id="forward" src="assets/icons/forward.png" alt="forward" />
-          </div>
-          <div class="container-btns">
-            <button class="btn-abs">ABS</button>
-            <button class="btn-cbs">CBS</button>
-          </div>
+          <img class="img active"
+            id="twabsred"
+            src="assets/main/twredhome.webp"
+            alt="cb300twister"
+          />
+          <img class="img"
+            id="twabsblue"
+            src="assets/main/twbluehome.webp"
+            alt="cb300twister"
+          />
         </div>
+        <div class="container-btns">
+          <button class="btn-abs">ABS</button>
+          <button class="btn-cbs">CBS</button>
+        </div>
+        <img id="forward" src="assets/icons/forward.png" alt="forward" />
       </section>
 
       <section id="versoes">
@@ -152,5 +159,7 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
+  
 </html>
