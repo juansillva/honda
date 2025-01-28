@@ -35,6 +35,7 @@
 
 .container-tw300abs,
 .container-tw300cbs {
+  position: relative;
   display: flex;
   flex-direction: row;
   font-family: "Roboto", sans-serif;
@@ -46,12 +47,12 @@
   gap: 20px;
   border-style: solid;
   border-color: #b30000;
-  width: 550px 0 0;
+  width: 680px;
 }
 
 #abs-red,
 #cbs-grey {
-  width: 616px;
+  width: 100%;
 }
 
 .abs-specs,
@@ -69,12 +70,13 @@
 
 .abs-specs h4 {
   font-weight: 300;
+  width: 60%;
 }
 
 .abs-specs h5 {
   font-weight: 300;
   line-height: normal;
-  width: 322px;
+  width: 60%;
 }
 
 .cbs-specs h4 {
@@ -131,4 +133,47 @@ footer .icons img {
 
 footer .icons img:hover {
   transform: scale(0.9);
+}
+
+@media (max-width: 1024px) {
+  #titulo-versions {
+    font-size: 28px;
+    transform: translateX(3%);
+  }
+
+  #subtitulo-versions {
+    font-size: 16px;
+    transform: translateX(1%);
+  }
+
+  .container-tw300abs,
+  .container-tw300cbs {
+    width: 60%;
+  }
+  .abs-specs {
+    transform: translateY(18px);
+  }
+  .cbs-specs {
+    transform: translateY(20px);
+  }
+  .abs-specs,
+  .cbs-specs {
+    & h2 {
+      font-size: 20px;
+    }
+
+    & h4 {
+      font-size: 14px;
+      width: 300px;
+    }
+
+    & h5 {
+      font-size: 12px;
+      width: 266px;
+    }
+  }
+  .container-abs-versions,
+  .container-cbs-versions {
+    gap: 50px;
+  }
 }

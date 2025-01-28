@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  #titulo-versions {
+    font-size: 18px;
+  }
+  #subtitulo-versions {
+    font-size: 12px;
+  }
+
+  .abs-specs {
+    transform: translateY(18px);
+  }
+  .cbs-specs {
+    transform: translateY(20px);
+  }
+  .abs-specs,
+  .cbs-specs {
+    & h2 {
+      font-size: 20px;
+    }
+
+    & h4 {
+      font-size: 14px;
+      width: 300px;
+    }
+
+    & h5 {
+      font-size: 12px;
+      width: 266px;
+    }
+  }
+}
