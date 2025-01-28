@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honda CB 300F Twister 2025 - Naked|Honda Motos</title>
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/versions.css" />
+    <link rel="stylesheet" href="styles/desktop/home.css" />
+    <link rel="stylesheet" href="styles/desktop/versions.css" />
+    <link rel="stylesheet" href="styles/mobile/home-mobile.css" />
+    <link rel="stylesheet" href="styles/mobile/versions-mobile.css" />
     <link
       rel="icon"
       type="image/png"
@@ -16,12 +18,31 @@
   <body>
     <header>
       <img id="menu" src="assets/header/menu.png" alt="menu" />
-      <img id="logo-honda" src="assets/header/logo.svg" alt="logohonda" />
+      <div class="all-logos">
+        <img
+          id="default-logo"
+          class="default active"
+          src="assets/header/logo.svg"
+          alt="logodefault"
+        />
+        <img
+          id="logo-blue"
+          class="logo-blue"
+          src="assets/header/logoblue.svg"
+          alt="logoalternative"
+        />
+        <img
+          id="logo-grey"
+          class="logo-grey"
+          src="assets/header/logogrey.svg"
+          alt="logoalternative"
+        />
+      </div>
+
       <nav class="nav-bar">
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="#versoes">Versões</a></li>
-          <li><a href="#caracteristicas">Características</a></li>
           <li><a href="#siteoficial">Site Oficial</a></li>
         </ul>
       </nav>
@@ -35,18 +56,35 @@
             <strong class="strong-home">CB 300F Twister!</strong>
           </h1>
           <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister"
-            ><button class="btn-inter">Tenho Interesse</button></a>
+            ><button id="button-tenho-interesse" class="btn-inter">
+              Tenho Interesse
+            </button></a
+          >
         </div>
         <div class="cb300-home">
-          <img class="img active"
+          <img
+            class="img active"
             id="twabsred"
             src="assets/main/twredhome.webp"
             alt="cb300twister"
           />
-          <img class="img"
+          <img
+            class="img"
             id="twabsblue"
             src="assets/main/twbluehome.webp"
             alt="cb300twister"
+          />
+          <img
+            class="img"
+            id="twcbsred"
+            src="assets/main/twgreyhome.webp"
+            alt=""
+          />
+          <img
+            class="img"
+            id="twcbsgrey"
+            src="assets/main/twcbsredhome.webp"
+            alt=""
           />
         </div>
         <div class="container-btns">
@@ -144,10 +182,10 @@
           Criado exclusivamente para fins conceituais e de portfólio.
         </h5>
         <br />
-        <h5>&copy; © 2025 Juan André. Todos os direitos reservados.</h5>
+        <h5>&copy; 2025 Juan André. Todos os direitos reservados.</h5>
 
         <div class="icons">
-          <a href="https://www.linkedin.com/in/juuanandre/"
+          <a href="https://wa.me/qr/K2TZ3O6I6FEUI1"
             ><img src="assets/icons/WhatsApp.png" alt=""
           /></a>
           <a href="https://github.com/juansillva"
@@ -161,5 +199,4 @@
     </footer>
     <script src="app.js"></script>
   </body>
-  
 </html>
