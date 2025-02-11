@@ -1,0 +1,77 @@
+/*/animação da barra de carregamento/*/
+
+@keyframes load {
+  0% {
+    width: 0;
+    background: #8f1111;
+  }
+
+  25% {
+    width: 40%;
+    background: #8f1111;
+  }
+
+  50% {
+    width: 60%;
+    background: #8f1111;
+  }
+  75% {
+    width: 75%;
+    background: #8f1111;
+  }
+
+  100% {
+    width: 100%;
+    background: #8f1111;
+  }
+}
+
+.container-loading-bar {
+  margin: 25%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.loading-bar {
+  display: flex;
+  width: 50%;
+  height: 2px;
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  animation: load 5s forwards;
+}
+
+.remove-loading-bar {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.show-content {
+  opacity: 1;
+}
+
+header {
+  transform: translateY(-100%);
+  transition: 0.5s ease-out;
+}
+
+.show-header {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.show-home {
+  transform: translateX(0);
+  opacity: 1;
+}
+.show-versions {
+  opacity: 1;
+}

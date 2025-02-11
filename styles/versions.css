@@ -1,0 +1,125 @@
+#versoes {
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#titulo-versions {
+  margin-top: 15px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+#subtitulo-versions {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 40%;
+  margin-top: 15px;
+}
+
+.container-titulo-versions {
+  margin-left: 25px;
+}
+
+.container-abs-versions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.container-cbs-versions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.container-tw300abs,
+.container-tw300cbs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 5%;
+  margin-left: 60px;
+  position: relative;
+  gap: 20px;
+  border-style: solid;
+  border-color: #b30000;
+  border-width: 0.5px;
+  width: 680px;
+}
+
+#abs-red,
+#cbs-grey {
+  width: 100%;
+}
+
+.abs-specs,
+.cbs-specs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  width: 40%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.abs-specs h4 {
+  font-weight: 300;
+  width: 60%;
+}
+
+.abs-specs h5 {
+  font-weight: 300;
+  line-height: normal;
+  width: 60%;
+}
+
+.cbs-specs h4 {
+  font-weight: 300;
+}
+
+.cbs-specs h5 {
+  font-weight: 300;
+  line-height: normal;
+  width: 322px;
+}
+
+#destaque {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+  width: 80px;
+  height: 20px;
+  background-color: #b30000;
+  color: white;
+}
+
+.btn-abs,
+.btn-cbs {
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 600px;
+  background-color: #b30000;
+  color: #ffffff;
+  border-radius: 2px;
+  border: none;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+}

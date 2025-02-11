@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Honda CB 300F Twister 2025 - Naked|Honda Motos</title>
-    <link rel="stylesheet" href="styles/desktop/home.css" />
-    <link rel="stylesheet" href="styles/desktop/versions.css" />
-    <link rel="stylesheet" href="styles/mobile/home-mobile.css" />
-    <link rel="stylesheet" href="styles/mobile/versions-mobile.css" />
+    <title>Honda CB 300F Twister 2025</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/versions.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/icon-pag.png"
+      href="./assets/icons/icon-pag.png"
     />
   </head>
+
   <body>
     <header>
       <img id="menu" src="assets/header/menu.png" alt="menu" />
@@ -38,7 +46,6 @@
           alt="logoalternative"
         />
       </div>
-
       <nav class="nav-bar">
         <ul>
           <li><a href="#inicio">Início</a></li>
@@ -47,8 +54,10 @@
         </ul>
       </nav>
     </header>
-
     <main>
+      <div class="container-loading-bar">
+        <div class="loading-bar"></div>
+      </div>
       <section id="inicio">
         <div class="content-home">
           <h1 class="titulos">
@@ -56,9 +65,7 @@
             <strong class="strong-home">CB 300F Twister!</strong>
           </h1>
           <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister"
-            ><button id="button-tenho-interesse" class="btn-inter">
-              Tenho Interesse
-            </button></a
+            ><button id="button-tenho-interesse">Tenho Interesse</button></a
           >
         </div>
         <div class="cb300-home">
@@ -66,43 +73,22 @@
             class="img active"
             id="twabsred"
             src="assets/main/twredhome.webp"
-            alt="cb300twister"
           />
-          <img
-            class="img"
-            id="twabsblue"
-            src="assets/main/twbluehome.webp"
-            alt="cb300twister"
-          />
-          <img
-            class="img"
-            id="twcbsred"
-            src="assets/main/twgreyhome.webp"
-            alt=""
-          />
-          <img
-            class="img"
-            id="twcbsgrey"
-            src="assets/main/twcbsredhome.webp"
-            alt=""
-          />
+          <img class="img" id="twabsblue" src="assets/main/twbluehome.webp" />
+          <img class="img" id="twcbsred" src="assets/main/twgreyhome.webp" />
+          <img class="img" id="twcbsgrey" src="assets/main/twcbsredhome.webp" />
         </div>
-        <div class="container-btns">
-          <button class="btn-abs">ABS</button>
-          <button class="btn-cbs">CBS</button>
-        </div>
-        <img id="forward" src="assets/icons/forward.png" alt="forward" />
+
+        <img id="arrow-red" class="arrows" src="./assets/icons/arrowred.svg" />
       </section>
 
-      <section id="versoes">
+      <section class="versions" id="versoes">
         <hr />
         <h1 id="titulo-versions" class="titulos">
           Acelere para o futuro e curta cada quilômetro, <br />
           <strong class="strong-home">Leve a vida numa Honda.</strong>
         </h1>
-        <h3 id="subtitulo-versions" class="subtitulos">
-          Confira as duas versões da Twister
-        </h3>
+        <h3 id="subtitulo-versions">Confira as duas versões da Twister</h3>
 
         <div class="container-abs-versions">
           <div class="container-tw300abs">
@@ -121,13 +107,17 @@
               entrega uma experiência de pilotagem avançada.
             </h4>
 
-            <h5>
-              <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
-              (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
-              <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500 rpm
-              (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
-              <strong>Combustível:</strong>Combustível: Gasolina / Álcool
-            </h5>
+            <ul>
+              <li>
+                <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
+                (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
+              </li>
+              <li>
+                <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500
+                rpm (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
+              </li>
+              <li><strong>Combustível:</strong> Gasolina / Álcool</li>
+            </ul>
           </div>
           <div class="colors-options">
             <div class="color-red"></div>
@@ -157,13 +147,17 @@
               condução confortável no dia a dia.
             </h4>
 
-            <h5>
-              <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
-              (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
-              <strong>Torque Máximo:</strong>  25,6 N.m (2,61 kgf.m) a 5.500 rpm
-              (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
-              <strong>Combustível:</strong> Gasolina / Álcool
-            </h5>
+            <ul>
+              <li>
+                <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
+                (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
+              </li>
+              <li>
+                <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500
+                rpm (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
+              </li>
+              <li><strong>Combustível:</strong> Gasolina / Álcool</li>
+            </ul>
           </div>
           <div class="colors-options">
             <div class="color-gray"></div>
@@ -183,7 +177,6 @@
         </h5>
         <br />
         <h5>&copy; 2025 Juan André. Todos os direitos reservados.</h5>
-
         <div class="icons">
           <a href="https://wa.me/qr/K2TZ3O6I6FEUI1"
             ><img src="assets/icons/WhatsApp.png" alt=""
@@ -197,6 +190,7 @@
         </div>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/load.js"></script>
   </body>
 </html>
