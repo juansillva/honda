@@ -1,0 +1,151 @@
+@media (max-width: 1020px) {
+  .titulos {
+    font-size: 28px;
+  }
+
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-home {
+    order: 3;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .cb300-home {
+    width: 650px;
+    height: 450px;
+    margin-top: 50px;
+  }
+
+  .arrow-container {
+    margin: 0;
+  }
+
+  /*style versions/*/
+
+  .abs-specs {
+    & h4 {
+      font-size: 14px;
+    }
+
+    & ul li {
+      font-size: 14px;
+    }
+  }
+
+  .cbs-specs {
+    & h4 {
+      font-size: 14px;
+    }
+
+    & ul li {
+      font-size: 14px;
+    }
+  }
+
+  .btn-abs,
+  .btn-cbs {
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  #default-logo {
+    width: 220px;
+    margin-right: 12%;
+  }
+  .nav-bar ul li a {
+    display: none;
+  }
+
+  .titulos {
+    font-size: 26px;
+  }
+  .cb300-home {
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+  }
+  .content-home {
+    width: 100%;
+  }
+  .arrow-container {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .container-abs-versions,
+  .container-cbs-versions {
+    flex-direction: column;
+  }
+  .container-tw300abs,
+  .container-tw300cbs {
+    margin-left: 0;
+  }
+}
+@media (max-width: 650px) {
+  .titulos {
+    font-size: 24px;
+    margin: 25px;
+    text-align: center;
+  }
+  .cb300-home {
+    width: 550px;
+    height: 350px;
+    margin: 50px;
+    & img {
+      margin: 50px;
+    }
+  }
+  .content-home {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 10px;
+  }
+  .content-header {
+    margin-left: 10px;
+  }
+  #default-logo {
+    width: 200px;
+  }
+  .cb300-home {
+    width: 350px;
+    height: 250px;
+  }
+
+  .titulos {
+    font-size: 22px;
+  }
+  .container-tw300abs,
+  .container-tw300cbs {
+    & img {
+      width: 100%;
+    }
+  }
+  .container-loading-bar {
+    & img {
+      width: 150px;
+    }
+  }
+  .abs-specs,
+  .cbs-specs {
+    & h4 {
+      width: 316px;
+    }
+  }
+}

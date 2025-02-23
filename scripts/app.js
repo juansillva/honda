@@ -1,25 +1,106 @@
-const cbabsred = document.getElementById("twabsred");
-const cbabsblue = document.getElementById("twabsblue");
+/* Manipulação de elementos da section "Home" */
+/*Eventos de interação com o usuário*/
 
-const buttonSelect = document.getElementById("arrow-red");
+const motos = [
+  {
+    element: document.querySelector("#twabsred"),
+    button: "#b30000",
+    logo : document.querySelector("#default-logo"),
+    arrow: document.querySelector("#arrow-red"),
+  },
+  {
+    element: document.querySelector("#twabsblue"),
+    button: "#1D2E51",
+    logo : document.querySelector("#logo-blue"),
+    arrow: document.querySelector("#arrow-blue"),
+  },
+  {
+    element: document.querySelector("#twcbsgrey"),
+    button: "#6D6D6D",
+    logo : document.querySelector("#logo-grey"),
+    arrow: document.querySelector("#arrow-grey"),
+  },
+  {
+    element: document.querySelector("#twcbsred"),
+    button: "#b30000",
+    logo : document.querySelector("#default-logo"),
+    arrow: document.querySelector("#arrow-red"),
+  },
+ 
+];
 
-const logoHondaDefault = document.querySelector("#default-logo");
-const logoHondaBlue = document.querySelector("#logo-blue");
-const buttonTenhoInteresse = document.getElementById("button-tenho-interesse");
+let currentMoto = 0;
 
-buttonSelect.addEventListener("click", function (event) {
-  if (cbabsred.classList.contains("active")) {
-    cbabsred.classList.remove("active");
-    cbabsblue.classList.add("active");
+const arrowContainer = document.querySelector(".arrow-container");
+const interestedButton = document.querySelector("#button-tenho-interesse"); // Adiciona a referência do botão
 
-    buttonTenhoInteresse.style.backgroundColor = "#1D2E51";
-    logoHondaDefault.classList.remove("active");
-    logoHondaBlue.classList.add("active");
-  } else {
-    cbabsblue.classList.remove("active");
-    cbabsred.classList.add("active");
-    buttonTenhoInteresse.style.backgroundColor = "#b30000";
-    logoHondaDefault.classList.add("active");
-    logoHondaBlue.classList.remove("active");
-  }
+arrowContainer.addEventListener("click", function () {
+
+  
+  motos[currentMoto].element.classList.remove("active");
+  motos[currentMoto].logo.classList.remove("active");
+  motos[currentMoto].arrow.classList.remove("active");
+
+
+  currentMoto = (currentMoto + 1) % motos.length;
+  console.log(currentMoto);
+
+
+  motos[currentMoto].element.classList.add("active");
+  motos[currentMoto].logo.classList.add("active");
+  motos[currentMoto].arrow.classList.add("active");
+
+  // Atualiza a cor do botão de interesse com base na moto ativa
+  interestedButton.style.backgroundColor = motos[currentMoto].button;
 });
+
+const colors = [
+  {
+    buttoncolor: document.querySelector('.color-red'),
+    moto: document.querySelector('#twabsred-versions'),
+  }
+
+  
+
+
+
+]
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("menu-icon").addEventListener("click", function () {
+  document.getElementById("sidebar").classList.add("sidebar-open");
+});
+
+document.getElementById("close-btn").addEventListener("click", function () {
+  document.getElementById("sidebar").classList.remove("sidebar-open");
+});
+
+/* Manipulação de elementos da section "Versions"*/
+
+const colorRed = document.querySelector(".color-red");
+const colorBlack = document.querySelector(".color-black");

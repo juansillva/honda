@@ -1,101 +1,86 @@
-#versoes {
+.versions {
   margin-bottom: 50px;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-#titulo-versions {
-  margin-top: 15px;
-  margin-left: 5px;
+.container-titulo-versions {
   text-align: center;
+  margin-top: 20px;
+  transform: translateY(100vw);
+  transition: 0.5s ease;
 }
-
 #subtitulo-versions {
+  margin: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin-left: 40%;
-  margin-top: 15px;
 }
-
-.container-titulo-versions {
-  margin-left: 25px;
-}
-
-.container-abs-versions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-}
-
+.container-abs-versions,
 .container-cbs-versions {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
 }
-
 .container-tw300abs,
 .container-tw300cbs {
   position: relative;
   display: flex;
-  flex-direction: row;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  margin-top: 5%;
-  margin-left: 60px;
-  position: relative;
-  gap: 20px;
   border-style: solid;
   border-color: #b30000;
   border-width: 0.5px;
-  width: 680px;
-}
+  width: 500px;
+  height: 400px;
+  flex: 1;
+  margin-left: 4%;
 
-#abs-red,
-#cbs-grey {
-  width: 100%;
-}
+  & img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    & :active{
+      opacity: 1;
+    }
+  }
 
+  
+}
+.tw-versions {
+  transform: translateX(-100%);
+  transition: 0.5s ease;
+}
 .abs-specs,
 .cbs-specs {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 15px;
   font-family: "Roboto", sans-serif;
-  width: 40%;
-  border: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
+  flex: 1;
 }
 
 ul li {
   list-style-type: none;
 }
-
 .abs-specs h4 {
   font-weight: 300;
   width: 60%;
 }
-
-.abs-specs h5 {
-  font-weight: 300;
-  line-height: normal;
-  width: 60%;
-}
-
-.cbs-specs h4 {
-  font-weight: 300;
-}
-
-.cbs-specs h5 {
+.abs-specs ul li {
   font-weight: 300;
   line-height: normal;
   width: 322px;
 }
-
+.cbs-specs h4 {
+  font-weight: 300;
+  width: 60%;
+}
+.cbs-specs ul li {
+  font-weight: 300;
+  line-height: normal;
+  width: 322px;
+}
 #destaque {
   position: absolute;
   font-family: "Roboto", sans-serif;
@@ -107,6 +92,32 @@ ul li {
   height: 20px;
   background-color: #b30000;
   color: white;
+}
+
+.colors-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-red {
+  width: 30px;
+  height: 30px;
+  background-color: #b30000;
+  border-radius: 50%;
+}
+
+.color-black {
+  width: 30px;
+  height: 30px;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+}
+
+.color-blue {
+  width: 30px;
+  height: 30px;
+  background-color: #303f83;
+  border-radius: 50%;
 }
 
 .btn-abs,

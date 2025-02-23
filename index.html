@@ -1,196 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Honda CB 300F Twister 2025</title>
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/versions.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/icon-pag.png"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honda CB 300F Twister 2025</title>
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/home.css" />
+  <link rel="stylesheet" href="./styles/versions.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./styles/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/icon-pag.png" />
+</head>
 
-  <body>
-    <header>
-      <img id="menu" src="assets/header/menu.png" alt="menu" />
-      <div class="all-logos">
-        <img
-          id="default-logo"
-          class="default active"
-          src="assets/header/logo.svg"
-          alt="logodefault"
-        />
-        <img
-          id="logo-blue"
-          class="logo-blue"
-          src="assets/header/logoblue.svg"
-          alt="logoalternative"
-        />
-        <img
-          id="logo-grey"
-          class="logo-grey"
-          src="assets/header/logogrey.svg"
-          alt="logoalternative"
-        />
+<body>
+  <header>
+    <div class="content-header">
+      <img class="menu" id="menu-icon" src="./assets/header/menu.svg" alt="Botão de Menu" />
+      <div class="logo-container">
+        <img id="default-logo"class="logo active" src="./assets/header/honda-horizontal.svg" alt="Logo Padrão" />
+        <img id="logo-blue"   class="logo"  src="./assets/header/honda-horizontal-blue.svg" alt="Logo Azul" />
+        <img id="logo-grey"   class="logo"  src="./assets/header/honda-horizontal-grey.svg" alt="Logo Cinza" />
+        <img id="logo-red"    class="logo"  src="./assets/header/honda-horizontal.svg" alt="Logo Vermelho" />
       </div>
+ 
+
       <nav class="nav-bar">
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="#versoes">Versões</a></li>
-          <li><a href="#siteoficial">Site Oficial</a></li>
+          <li>
+            <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister">Site Oficial</a>
+          </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div class="container-loading-bar">
-        <div class="loading-bar"></div>
-      </div>
-      <section id="inicio">
-        <div class="content-home">
-          <h1 class="titulos">
-            Acelere seus limites com a nova
-            <strong class="strong-home">CB 300F Twister!</strong>
-          </h1>
-          <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister"
-            ><button id="button-tenho-interesse">Tenho Interesse</button></a
-          >
-        </div>
-        <div class="cb300-home">
-          <img
-            class="img active"
-            id="twabsred"
-            src="assets/main/twredhome.webp"
-          />
-          <img class="img" id="twabsblue" src="assets/main/twbluehome.webp" />
-          <img class="img" id="twcbsred" src="assets/main/twgreyhome.webp" />
-          <img class="img" id="twcbsgrey" src="assets/main/twcbsredhome.webp" />
-        </div>
+    </div>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <img id="logo-side-bar" src="./assets/header/honda-horizontal.svg" alt="" />
+    <button id="close-btn">&times;</button>
 
-        <img id="arrow-red" class="arrows" src="./assets/icons/arrowred.svg" />
-      </section>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#versoes">Versões</a></li>
+      <li>
+        <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister">Site Oficial</a>
+      </li>
+    </ul>
+  </aside>
+  <div class="container-loading-bar">
+    <img class="logo-loading-bar" src="./assets/header/honda-horizontal.svg" alt="logodefault" />
+    <div class="loading-bar"></div>
+  </div>
+  <section id="inicio" class="home">
+    <div class="content-home">
+      <h1 class="titulos">
+        Acelere seus limites com a nova
+        <strong class="strong-home">CB 300F Twister!</strong>
+      </h1>
+      <a href="https://www.honda.com.br/motos/street/naked/cb-300f-twister"><button id="button-tenho-interesse">Tenho
+          Interesse</button></a>
+    </div>
+    <div class="cb300-home">
+      <img class="img active" id="twabsred" src="./assets/home/twabsred.webp" />
+      <img class="img" id="twabsblue" src="./assets/home/twabsblue.webp" />
+      <img class="img" id="twcbsgrey" src="./assets/home/twcbsgrey.webp" />
+      <img class="img" id="twcbsred" src="./assets/home/twcbsred.webp" />
+    </div>
+    <div class="arrow-container">
+    <img id="arrow-red" class="arrow active" src="./assets/icons/arrowred.svg" />
+    <img id="arrow-blue" class="arrow" src="./assets/icons/arrowblue.svg" />
+    <img id="arrow-grey" class="arrow" src="./assets/icons/arrowgrey.svg" />
 
-      <section class="versions" id="versoes">
-        <hr />
-        <h1 id="titulo-versions" class="titulos">
-          Acelere para o futuro e curta cada quilômetro, <br />
-          <strong class="strong-home">Leve a vida numa Honda.</strong>
-        </h1>
-        <h3 id="subtitulo-versions">Confira as duas versões da Twister</h3>
+    </div>
+  </section>
 
-        <div class="container-abs-versions">
-          <div class="container-tw300abs">
-            <img id="abs-red" src="assets/versions/tw300abs-red.webp" alt="" />
-            <div id="destaque">
-              <h6>DESTAQUE</h6>
-            </div>
-          </div>
+  <section id="versoes" class="versions">
+    <hr />
+    <div class="container-titulo-versions">
+      <h1 class="titulos">
+        Acelere para o futuro e curta cada quilômetro, <br />
+        <strong>Leve a vida numa Honda.</strong>
+      </h1>
+      <h3 id="subtitulo-versions">Confira as duas versões da Twister</h3>
+    </div>
 
-          <div class="abs-specs">
-            <button class="btn-abs">ABS</button>
-            <h2>CB 300F Twister <strong style="color: #b30000">ABS</strong></h2>
-            <h4>
-              CB 300F Twister ABS representa modernidade. Com um sistema de
-              freios que oferece uma resposta precisa e controlada, esta versão
-              entrega uma experiência de pilotagem avançada.
-            </h4>
-
-            <ul>
-              <li>
-                <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
-                (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
-              </li>
-              <li>
-                <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500
-                rpm (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
-              </li>
-              <li><strong>Combustível:</strong> Gasolina / Álcool</li>
-            </ul>
-          </div>
-          <div class="colors-options">
-            <div class="color-red"></div>
-            <div class="color-blue"></div>
-            <div class="color-black">
-              <img src="assets/icons/search.png" alt="search" />
-            </div>
-          </div>
-        </div>
-
-        <div class="container-cbs-versions">
-          <div class="container-tw300cbs">
-            <img
-              id="cbs-grey"
-              src="assets/versions/tw300cbs-grey.webp"
-              alt=""
-            />
-          </div>
-
-          <div class="cbs-specs">
-            <button class="btn-cbs">CBS</button>
-            <h2>CB 300F Twister <strong style="color: #b30000">CBS</strong></h2>
-            <h4>
-              Na versão CBS, a tradição se une à eficiência. O sistema CBS
-              distribui a frenagem entre as rodas, proporcionando um controle
-              equilibrado e uma resposta imediata, ideal para quem busca uma
-              condução confortável no dia a dia.
-            </h4>
-
-            <ul>
-              <li>
-                <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
-                (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
-              </li>
-              <li>
-                <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500
-                rpm (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
-              </li>
-              <li><strong>Combustível:</strong> Gasolina / Álcool</li>
-            </ul>
-          </div>
-          <div class="colors-options">
-            <div class="color-gray"></div>
-            <div class="color-red"></div>
-            <div class="color-black">
-              <img src="assets/icons/search.png" alt="search" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="content-footer">
-        <h5>
-          Este redesign não é afiliado nem patrocinado pela Honda. <br />
-          Criado exclusivamente para fins conceituais e de portfólio.
-        </h5>
-        <br />
-        <h5>&copy; 2025 Juan André. Todos os direitos reservados.</h5>
-        <div class="icons">
-          <a href="https://wa.me/qr/K2TZ3O6I6FEUI1"
-            ><img src="assets/icons/WhatsApp.png" alt=""
-          /></a>
-          <a href="https://github.com/juansillva"
-            ><img src="assets/icons/GitHub.png" alt=""
-          /></a>
-          <a href="https://www.linkedin.com/in/juuanandre/"
-            ><img src="assets/icons/LinkedIn.png" alt=""
-          /></a>
+    <div class="container-abs-versions">
+      <div class="container-tw300abs">
+        <img id="twabsred-versions" class="tw-versions" src="./assets/versions/twabsred-versions.webp" alt="" />
+        <div id="destaque">
+          <h6>DESTAQUE</h6>
         </div>
       </div>
-    </footer>
-    <script src="./scripts/app.js"></script>
-    <script src="./scripts/load.js"></script>
-  </body>
+
+      <div class="abs-specs">
+        <button class="btn-abs">ABS</button>
+        <h2>CB 300F Twister <strong style="color: #b30000">ABS</strong></h2>
+        <h4>
+          CB 300F Twister ABS representa modernidade. Com um sistema de freios
+          que oferece uma resposta precisa e controlada, esta versão entrega
+          uma experiência de pilotagem avançada.
+        </h4>
+        <ul>
+          <li>
+            <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
+            (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
+          </li>
+          <li>
+            <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500 rpm
+            (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
+          </li>
+          <li><strong>Combustível:</strong> Gasolina / Álcool</li>
+        </ul>
+        <div class="colors-options">
+          <div class="color-red"></div>
+          <div class="color-blue"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-cbs-versions">
+      <div class="container-tw300cbs">
+        <img class="tw-versions" src="assets/versions/twcbsgrey-versions.webp" alt="" />
+        <img class="tw-versions" scr="assets/versions/twcbsred-versions.webp" alt="">
+      </div>
+
+      <div class="cbs-specs">
+        <button class="btn-cbs">CBS</button>
+        <h2>CB 300F Twister <strong style="color: #b30000">CBS</strong></h2>
+        <h4>
+          Na versão CBS, a tradição se une à eficiência. O sistema CBS
+          distribui a frenagem entre as rodas, proporcionando um controle
+          equilibrado e uma resposta imediata, ideal para quem busca uma
+          condução confortável no dia a dia.
+        </h4>
+
+        <ul>
+          <li>
+            <strong>Potência Máxima:</strong> 18,0 kW (24,5 CV) a 7.500 rpm
+            (Gasolina) / 18,2 kW (24,7 CV) a 7.500 rpm (Etanol)
+          </li>
+          <li>
+            <strong>Torque Máximo:</strong> 25,6 N.m (2,61 kgf.m) a 5.500 rpm
+            (Gasolina) / 26,2 N.m (2,67 kgf.m) a 5.500 rpm (Etanol)
+          </li>
+          <li><strong>Combustível:</strong> Gasolina / Álcool</li>
+        </ul>
+        <div class="colors-options">
+          <div class="color-red"></div>
+          <div class="color-black"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="content-footer">
+      <h5>
+        Este redesign não é afiliado nem patrocinado pela Honda. <br />
+        Criado exclusivamente para fins conceituais e de portfólio.
+      </h5>
+      <br />
+      <h5>Entre em contato comigo📩</h5>
+      <div class="icons">
+        <a href="https://wa.me/qr/K2TZ3O6I6FEUI1" target="_blank">
+          <img src="assets/icons/wpp-icon.svg" />
+        </a>
+        <a href="https://github.com/juansillva" target="_blank">
+          <img src="assets/icons/github-icon.svg" />
+        </a>
+        <a href="https://www.linkedin.com/in/juuanandre/" target="_blank">
+          <img src="assets/icons/linkedin-icon.svg" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/effects.js"></script>
+</body>
+
 </html>
