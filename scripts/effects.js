@@ -1,4 +1,4 @@
-
+/* Arquivo effects.js para efeitos iniciais e automáticos do website */
 /*Efeitos/Animações iniciais*/
 const loadingBar = document.querySelector(".loading-bar");
 const containerLoadingBar = document.querySelector(".container-loading-bar");

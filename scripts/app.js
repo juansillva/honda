@@ -1,5 +1,5 @@
+/*Arquivo app.js para interações do usuário com o website*/
 /* Manipulação de elementos da section "Home" */
-/*Eventos de interação com o usuário*/
 
 const motos = [
   {
@@ -32,7 +32,7 @@ const motos = [
 let currentMoto = 0;
 
 const arrowContainer = document.querySelector(".arrow-container");
-const interestedButton = document.querySelector("#button-tenho-interesse"); // Adiciona a referência do botão
+const interestedButton = document.querySelector("#button-tenho-interesse"); 
 
 arrowContainer.addEventListener("click", function () {
 
@@ -50,46 +50,9 @@ arrowContainer.addEventListener("click", function () {
   motos[currentMoto].logo.classList.add("active");
   motos[currentMoto].arrow.classList.add("active");
 
-  // Atualiza a cor do botão de interesse com base na moto ativa
+ 
   interestedButton.style.backgroundColor = motos[currentMoto].button;
 });
-
-const colors = [
-  {
-    buttoncolor: document.querySelector('.color-red'),
-    moto: document.querySelector('#twabsred-versions'),
-  }
-
-  
-
-
-
-]
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 document.getElementById("menu-icon").addEventListener("click", function () {
@@ -100,7 +63,6 @@ document.getElementById("close-btn").addEventListener("click", function () {
   document.getElementById("sidebar").classList.remove("sidebar-open");
 });
 
-/* Manipulação de elementos da section "Versions"*/
 
-const colorRed = document.querySelector(".color-red");
-const colorBlack = document.querySelector(".color-black");
+
+
