@@ -1,7 +1,8 @@
 
 # 🚀 Redesign da CB 300 Twister Honda  
 
-![CB 300 Twister Honda](coloque_aqui_um_banner_se_tiver)  
+![CB 300 Twister Honda]() ![pc abs red](https://github.com/user-attachments/assets/87af30af-465f-4f17-9108-3b0cbfab9e14)
+
 
 ## 📌 Sobre o Projeto  
 Este é um projeto **conceitual e sem fins comerciais**, desenvolvido para aprimorar minhas habilidades em **HTML, CSS e JavaScript puro**. O redesign foi feito inicialmente no **Figma**, focando em um layout moderno e funcional. Em seguida, transformei o design em código, garantindo **responsividade para PC, tablets e celulares** e adicionando **animações interativas**.  
