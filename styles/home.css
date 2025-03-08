@@ -21,7 +21,7 @@
 
 .logo-container {
   position: relative;
-  width:  268px;
+  width: 268px;
   height: 60px;
   margin-left: 15%;
   cursor: pointer;
@@ -82,7 +82,7 @@
   z-index: 1;
 }
 
-#logo-side-bar{
+#logo-side-bar {
   width: 140px;
   margin: 15px;
 }
@@ -105,9 +105,9 @@
   font-family: "Roboto", serif;
 
   &:hover {
-  color: #b30000;
-  transition: transform 0.5s, color 0.5s;
-  transform: scale(0.9);
+    color: #b30000;
+    transition: transform 0.5s, color 0.5s;
+    transform: scale(0.9);
   }
 }
 
@@ -187,7 +187,7 @@
   }
 }
 
-.arrow-container{
+.arrow-container {
   position: relative;
   width: 50px;
   height: 50px;
@@ -205,10 +205,9 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.arrow.active{
+.arrow.active {
   opacity: 1;
 }
-
 
 hr {
   border-color: #b30000;
